@@ -7,6 +7,7 @@ namespace ProductReviewManagement
         static void Main(string[] args)
         {
             List<Product> list = new List<Product>();
+            Operations operations = new Operations();
             list.Add(new Product()
             {
                 ProductID = 1,
