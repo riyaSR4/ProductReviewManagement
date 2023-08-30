@@ -127,6 +127,7 @@ namespace ProductReviewManagement
                 Review = "Bad",
                 isLike = false,
             });
+            operations.Display(list);
         }
     }
 }
