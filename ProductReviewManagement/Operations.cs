@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProductReviewManagement
 {
-    internal class Operations
+    public class Operations
     {
+        public void Display(List<Product> list)
+        {
+            foreach (var data in list)
+            {
+                Console.WriteLine(data.ProductID + " " + data.UserID + " " + data.Rating + " " 
+                    + data.Review + " " + data.isLike + " " );
+            }
+        }
     }
 }
