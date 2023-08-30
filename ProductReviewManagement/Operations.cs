@@ -35,6 +35,11 @@ namespace ProductReviewManagement
                 Console.WriteLine(data.ProductId + " " + data.Review);
             }
         }
+        public void SkipTopRecords(List<Product> list)
+        {
+            var result = list.Skip(5);
+            Display(result.ToList());
+        }
         public void Display(List<Product> list)
         {
             foreach (var data in list)
