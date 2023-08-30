@@ -129,8 +129,9 @@ namespace ProductReviewManagement
                 isLike = false,
             });
 
-            operations.RetrieveTopRecords(list);
-            operations.Display(list);
+            //operations.RetrieveTopRecords(list);
+            //operations.Display(list);
+            operations.RetrieveAllRecordsWithCondition(list);
         }
     }
 }
