@@ -70,6 +70,11 @@ namespace ProductReviewManagement
                     + item.Field<bool>("isLike"));
             }
         }
+        public void AvgRating(List<Product> list)
+        {
+            var result = list.Average(x => x.Rating);
+            Console.WriteLine(result);
+        }
         public void Display(List<Product> list)
         {
             foreach (var data in list)
