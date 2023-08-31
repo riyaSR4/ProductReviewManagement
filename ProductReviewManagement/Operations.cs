@@ -80,6 +80,11 @@ namespace ProductReviewManagement
             var result = list.Where(x => x.Review.Equals("Nice"));
             Display(result.ToList());
         }
+        public void RetrieveUsingRating(List<Product> list)
+        {
+            var result = list.Where(x => x.UserID.Equals(10)).OrderBy(x => x.Rating);
+            Display(result.ToList());
+        }
         public void Display(List<Product> list)
         {
             foreach (var data in list)

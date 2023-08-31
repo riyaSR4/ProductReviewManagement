@@ -91,7 +91,7 @@ namespace ProductReviewManagement
             list.Add(new Product()
             {
                 ProductID = 11,
-                UserID = 6,
+                UserID = 10,
                 Rating = 5,
                 Review = "Good",
                 isLike = true,
@@ -99,7 +99,7 @@ namespace ProductReviewManagement
             list.Add(new Product()
             {
                 ProductID = 12,
-                UserID = 7,
+                UserID = 10,
                 Rating = 2,
                 Review = "Bad",
                 isLike = false,
@@ -107,7 +107,7 @@ namespace ProductReviewManagement
             list.Add(new Product()
             {
                 ProductID = 13,
-                UserID = 7,
+                UserID = 10,
                 Rating = 5,
                 Review = "Good",
                 isLike = true,
@@ -115,7 +115,7 @@ namespace ProductReviewManagement
             list.Add(new Product()
             {
                 ProductID = 14,
-                UserID = 8,
+                UserID = 10,
                 Rating = 4,
                 Review = "Nice",
                 isLike = true,
@@ -123,7 +123,7 @@ namespace ProductReviewManagement
             list.Add(new Product()
             {
                 ProductID = 15,
-                UserID = 8,
+                UserID = 10,
                 Rating = 1,
                 Review = "Bad",
                 isLike = false,
@@ -138,7 +138,8 @@ namespace ProductReviewManagement
             //operations.AddDataToDataTable(list);
             //operations.RetrieveRecordsFromDataTable();
             //operations.AvgRating(list);
-            operations.RetrieveUsingReview(list);
+            //operations.RetrieveUsingReview(list);
+            operations.RetrieveUsingRating(list);
         }
     }
 }
