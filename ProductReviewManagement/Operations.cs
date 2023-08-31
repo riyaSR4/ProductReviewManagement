@@ -60,6 +60,16 @@ namespace ProductReviewManagement
                     + item.Field<bool>("isLike"));
             }
         }
+        public void RetrieveRecordsFromDataTable()
+        {
+            var result = table.AsEnumerable().Where(x => x.Field<bool>("IsLike").Equals(true));
+            foreach (var item in result.AsEnumerable())
+            {
+                Console.WriteLine(item.Field<int>("ProductId") + " " + item.Field<int>("UserID")
+                    + " " + item.Field<int>("Rating") + " " + item.Field<string>("Review") + " "
+                    + item.Field<bool>("isLike"));
+            }
+        }
         public void Display(List<Product> list)
         {
             foreach (var data in list)

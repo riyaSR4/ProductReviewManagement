@@ -136,6 +136,7 @@ namespace ProductReviewManagement
             //operations.RetrieveProductIdAndReview(list);
             //operations.SkipTopRecords(list);
             operations.AddDataToDataTable(list);
+            operations.RetrieveRecordsFromDataTable();
         }
     }
 }
