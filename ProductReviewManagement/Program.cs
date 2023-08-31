@@ -53,7 +53,7 @@ namespace ProductReviewManagement
                 ProductID = 6,
                 UserID = 3,
                 Rating = 5,
-                Review = "Good",
+                Review = "Nice",
                 isLike = true,
             });
             list.Add(new Product()
@@ -117,7 +117,7 @@ namespace ProductReviewManagement
                 ProductID = 14,
                 UserID = 8,
                 Rating = 4,
-                Review = "Good",
+                Review = "Nice",
                 isLike = true,
             });
             list.Add(new Product()
@@ -137,7 +137,8 @@ namespace ProductReviewManagement
             //operations.SkipTopRecords(list);
             //operations.AddDataToDataTable(list);
             //operations.RetrieveRecordsFromDataTable();
-            operations.AvgRating(list);
+            //operations.AvgRating(list);
+            operations.RetrieveUsingReview(list);
         }
     }
 }
